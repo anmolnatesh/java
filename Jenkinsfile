@@ -2,7 +2,7 @@ pipeline {
   stages {
     stage('git'){
       steps{
-        git https://github.com/anmolnatesh/java.git
+        git url:'https://github.com/anmolnatesh/java.git'
           }
     }
   }
