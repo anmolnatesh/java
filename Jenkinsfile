@@ -1,6 +1,6 @@
 pipeline {
   stages {
-    stage('git'_){
+    stage('git'){
       steps{
         git https://github.com/anmolnatesh/java.git
           }
