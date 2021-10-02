@@ -16,5 +16,12 @@ pipeline {
         '''
       }
     }
+    stage('docker')
+    {
+      agent {docker {image 'docker:latest'}}
+      steps{
+        sh "docker --version"
+      }
+    }
   }
 }
